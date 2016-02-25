@@ -13,6 +13,9 @@
 		E1F6C98D1C7ED64D005DD5DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F6C98B1C7ED64D005DD5DF /* Main.storyboard */; };
 		E1F6C98F1C7ED64D005DD5DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F6C98E1C7ED64D005DD5DF /* Assets.xcassets */; };
 		E1F6C9921C7ED64D005DD5DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F6C9901C7ED64D005DD5DF /* LaunchScreen.storyboard */; };
+		E1F6C99C1C7ED673005DD5DF /* ZXDGifView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F6C99B1C7ED673005DD5DF /* ZXDGifView.m */; };
+		E1F6C99E1C7ED730005DD5DF /* detail.gif in Resources */ = {isa = PBXBuildFile; fileRef = E1F6C99D1C7ED730005DD5DF /* detail.gif */; };
+		E1F6C9A21C7EE015005DD5DF /* ZXDIncrementallyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F6C9A11C7EE015005DD5DF /* ZXDIncrementallyImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		E1F6C98E1C7ED64D005DD5DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1F6C9911C7ED64D005DD5DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1F6C9931C7ED64D005DD5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1F6C99A1C7ED673005DD5DF /* ZXDGifView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXDGifView.h; sourceTree = "<group>"; };
+		E1F6C99B1C7ED673005DD5DF /* ZXDGifView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXDGifView.m; sourceTree = "<group>"; };
+		E1F6C99D1C7ED730005DD5DF /* detail.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = detail.gif; sourceTree = "<group>"; };
+		E1F6C9A01C7EE015005DD5DF /* ZXDIncrementallyImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXDIncrementallyImage.h; sourceTree = "<group>"; };
+		E1F6C9A11C7EE015005DD5DF /* ZXDIncrementallyImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXDIncrementallyImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 		E1F6C9811C7ED64D005DD5DF /* ImageIO加载图片 */ = {
 			isa = PBXGroup;
 			children = (
+				E1F6C99F1C7EDFEB005DD5DF /* IncrementallyImage */,
+				E1F6C9991C7ED65B005DD5DF /* Gif */,
 				E1F6C9851C7ED64D005DD5DF /* AppDelegate.h */,
 				E1F6C9861C7ED64D005DD5DF /* AppDelegate.m */,
 				E1F6C9881C7ED64D005DD5DF /* ViewController.h */,
@@ -74,9 +84,28 @@
 		E1F6C9821C7ED64D005DD5DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E1F6C99D1C7ED730005DD5DF /* detail.gif */,
 				E1F6C9831C7ED64D005DD5DF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1F6C9991C7ED65B005DD5DF /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				E1F6C99A1C7ED673005DD5DF /* ZXDGifView.h */,
+				E1F6C99B1C7ED673005DD5DF /* ZXDGifView.m */,
+			);
+			name = Gif;
+			sourceTree = "<group>";
+		};
+		E1F6C99F1C7EDFEB005DD5DF /* IncrementallyImage */ = {
+			isa = PBXGroup;
+			children = (
+				E1F6C9A01C7EE015005DD5DF /* ZXDIncrementallyImage.h */,
+				E1F6C9A11C7EE015005DD5DF /* ZXDIncrementallyImage.m */,
+			);
+			name = IncrementallyImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1F6C9921C7ED64D005DD5DF /* LaunchScreen.storyboard in Resources */,
+				E1F6C99E1C7ED730005DD5DF /* detail.gif in Resources */,
 				E1F6C98F1C7ED64D005DD5DF /* Assets.xcassets in Resources */,
 				E1F6C98D1C7ED64D005DD5DF /* Main.storyboard in Resources */,
 			);
@@ -151,6 +181,8 @@
 			files = (
 				E1F6C98A1C7ED64D005DD5DF /* ViewController.m in Sources */,
 				E1F6C9871C7ED64D005DD5DF /* AppDelegate.m in Sources */,
+				E1F6C9A21C7EE015005DD5DF /* ZXDIncrementallyImage.m in Sources */,
+				E1F6C99C1C7ED673005DD5DF /* ZXDGifView.m in Sources */,
 				E1F6C9841C7ED64D005DD5DF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
